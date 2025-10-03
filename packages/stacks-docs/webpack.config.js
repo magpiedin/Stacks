@@ -38,7 +38,7 @@ module.exports = (_, argv) => {
                 {
                     test: /\.less$/,
                     use: [
-                        isProd ? MiniCssExtractPlugin.loader : "",
+                        MiniCssExtractPlugin.loader,
                         {
                             loader: "css-loader",
                             options: {
