@@ -163,3 +163,9 @@ Neutral 1000: 17.73:1
 
 Super-high contrast isn't a requirement, but it's a nice-to- have strive for it where possible\!
 
+---
+# Color Palette Image
+
+Below is a visual representation of the above information.
+
+<img src="https://raw.githubusercontent.com/magpiedin/Stacks/refs/heads/feat/field-museum-theme/fmnh_assets/fm_brand_color_palette.png" width="750px" />
