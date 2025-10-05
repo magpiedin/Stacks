@@ -25,20 +25,20 @@
     default: hsl(0, 0%, 0%);
 }
 
-// Black -> Field Museum Grays
+// Neutrals
 .set-black() {
-    050: hsl(210, 11%, 98%);
-    100: hsl(210, 11%, 95%); // #F0F3F3 Field Gray Lighter
-    150: hsl(210, 9%, 90%);
-    200: hsl(220, 7%, 87%);
-    225: hsl(224, 5%, 83%);
-    250: hsl(228, 4%, 79%); // #C9CACC Field Gray Light
-    300: hsl(235, 3%, 60%);
-    350: hsl(240, 3%, 50%);
-    400: hsl(244, 3%, 42%); // #6a6a71 Field Gray
-    500: hsl(240, 4%, 21%); // #333336 Field Gray Darker
-    600: hsl(240, 12%, 7%);  // #0F0F14 Field Black
-    default: hsl(240, 12%, 7%);
+    050: #F8FAFD;
+    100: #F3F5FA;
+    150: #E7EAF0;
+    200: #E7EAF0; // Note: No direct 200, using 150
+    225: #D6DAE1; // Note: No direct 225, using 300
+    250: #D6DAE1;
+    300: #D6DAE1;
+    350: #C0C4CC;
+    400: #6A6E76;
+    500: #50545B;
+    600: #3E4146;
+    default: #1A1C1F;
 }
 .set-black-dark() {
     050: hsl(210, 3%, 15%);
@@ -84,14 +84,14 @@
     default: hsl(0, 0%, 100%);
 }
 
-// Orange -> Field Museum Orange (A11y Pass)
+// Orange
 .set-orange() {
-    100: hsl(19, 82%, 96%);
-    200: hsl(19, 82%, 90%);
-    300: hsl(19, 82%, 85%);
-    400: hsl(19, 82%, 65%);
-    500: hsl(19, 82%, 55%);
-    600: hsl(19, 82%, 45%);
+    100: #FFE2CC;
+    200: #FFC395;
+    300: #FFA764;
+    400: #EC6600;
+    500: #9A4300;
+    600: #7D3800;
 }
 .set-orange-dark() {
     100: hsl(27, 55%, 20%);
@@ -118,14 +118,14 @@
     600: hsl(28, 78%, 93%);
 }
 
-// Blue -> Field Museum Blue
+// Primary
 .set-blue() {
-    100: hsl(221, 93%, 97%);
-    200: hsl(221, 93%, 87%);
-    300: hsl(221, 93%, 67%);
-    400: hsl(221, 93%, 47%); // #0a46e6
-    500: hsl(221, 93%, 37%);
-    600: hsl(221, 93%, 27%);
+    100: #EBF1FF;
+    200: #D9E6FF;
+    300: #BCD4FF;
+    400: #296DF0;
+    500: #0059CF;
+    600: #0045A8;
 }
 .set-blue-dark() {
     100: hsl(210, 50%, 22%);
@@ -152,14 +152,14 @@
     600: hsl(210, 78%, 93%);
 }
 
-// Green -> Field Museum Green (A11y Pass)
+// Green
 .set-green() {
-    100: hsl(167, 44%, 95%);
-    200: hsl(167, 44%, 85%);
-    300: hsl(167, 44%, 70%);
-    400: hsl(167, 44%, 45%);
-    500: hsl(167, 44%, 35%);
-    600: hsl(167, 44%, 25%);
+    100: #D7F7E9;
+    200: #B8F2D8;
+    300: #9BE0C1;
+    400: #248056;
+    500: #1E6645;
+    600: #0F4D2F;
 }
 .set-green-dark() {
     100: hsl(149, 51%, 15%);
@@ -186,14 +186,14 @@
     600: hsl(150, 39%, 93%);
 }
 
-// Red -> Field Museum Red
+// Red
 .set-red() {
-    100: hsl(4, 88%, 96%);
-    200: hsl(4, 88%, 90%);
-    300: hsl(4, 88%, 75%);
-    400: hsl(4, 88%, 52%); // #D44235 Warning Red
-    500: hsl(4, 88%, 42%);
-    600: hsl(4, 88%, 32%);
+    100: #FFE2E0;
+    200: #FFCFCB;
+    300: #FFA199;
+    400: #D22415;
+    500: #A91E12;
+    600: #8A180F;
 }
 .set-red-dark() {
     100: hsl(0, 43%, 22%);
@@ -220,14 +220,14 @@
     600: hsl(0, 76%, 95%);
 }
 
-// Yellow -> Field Museum Yellow (A11y Pass)
+// Amber
 .set-yellow() {
-    100: hsl(47, 83%, 95%);
-    200: hsl(47, 83%, 88%);
-    300: hsl(47, 83%, 80%);
-    400: hsl(47, 83%, 65%);
-    500: hsl(47, 83%, 55%);
-    600: hsl(47, 83%, 45%);
+    100: #FFEFCA;
+    200: #FFE39E;
+    300: #FFD469;
+    400: #A15300;
+    500: #8F4A00;
+    600: #753B00;
 }
 .set-yellow-dark() {
     100: hsl(43, 50%, 17%);
@@ -254,14 +254,14 @@
     600: hsl(44, 74%, 91%);
 }
 
-// Purple -> Field Museum Purple (A11y Pass)
+// Purple
 .set-purple() {
-    100: hsl(308, 30%, 95%);
-    200: hsl(308, 30%, 88%);
-    300: hsl(308, 30%, 80%);
-    400: hsl(308, 30%, 60%);
-    500: hsl(308, 30%, 45%);
-    600: hsl(308, 30%, 32%);
+    100: #F2DFFF;
+    200: #E8C5FF;
+    300: #D7AEF2;
+    400: #7F45A1;
+    500: #6C398A;
+    600: #592C70;
 }
 .set-purple-dark() {
     100: hsl(237, 26%, 23%);
@@ -421,7 +421,7 @@
 
 // font color
 .set-fc() {
-    light: var(--black-400);
+    light: var(--black-500);
     medium: var(--black-500);
     dark: var(--black-600);
     error: var(--red-400);

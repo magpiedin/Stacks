@@ -14,74 +14,16 @@
 //  $   FONT FAMILY (ff-)
 //  ----------------------------------------------------------------------------
 
-// Add Segoe UI Adjusted as a font family, and adjust its baseline
-@font-face {
-    font-family: "Segoe UI Adjusted";
-    src: local(Segoe UI);
-    ascent-override: 95%;
-}
+@import "font-face-switzer.less";
 
-// Segoe UI is variable, but only in Windows 11, so add all the variants
-@font-face {
-    font-family: "Segoe UI Adjusted";
-    src: local(Segoe UI Italic);
-    ascent-override: 95%;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: "Segoe UI Adjusted";
-    src: local(Segoe UI Semibold);
-    ascent-override: 95%;
-    font-weight: 600;
-}
-
-@font-face {
-    font-family: "Segoe UI Adjusted";
-    src: local(Segoe UI Semibold Italic);
-    ascent-override: 95%;
-    font-style: italic;
-    font-weight: 600;
-}
-
-@font-face {
-    font-family: "Segoe UI Adjusted";
-    src: local(Segoe UI Bold);
-    ascent-override: 90%;
-    font-weight: 700;
-}
-
-@font-face {
-    font-family: "Segoe UI Adjusted";
-    src: local(Segoe UI Bold Italic);
-    ascent-override: 95%;
-    font-style: italic;
-    font-weight: 700;
-}
-
-@font-face {
-    font-family: "Segoe UI Adjusted";
-    src: local(Segoe UI Black);
-    ascent-override: 95%;
-    font-weight: 800;
-}
-
-@font-face {
-    font-family: "Segoe UI Adjusted";
-    src: local(Segoe UI Black Italic);
-    ascent-override: 95%;
-    font-style: italic;
-    font-weight: 800;
-}
-
-// Field Museum font families
-@ff-druk: "Druk", sans-serif;
-@ff-graphik: "Graphik", sans-serif;
-@ff-lyon: "Lyon", serif;
-
-// Stacks families re-mapped
-@ff-sans: @ff-graphik;
-@ff-serif: @ff-lyon;
+// TODO remove font-family Less variables. Keeping them here for now for comments.
+@ff-sans:
+    "Switzer", // Field Museum primary font
+    -apple-system, BlinkMacSystemFont, // San Francisco on macOS and iOS
+    "Segoe UI", // Windows
+    "Liberation Sans", // Linux
+    sans-serif; // The final fallback for rendering in sans-serif.
+@ff-serif: Georgia, Cambria, "Times New Roman", Times, serif;
 @ff-mono:
     ui-monospace, // San Francisco Mono on macOS and iOS
     "Cascadia Mono", "Segoe UI Mono", // Newer Windows monospace fonts that are optionally installed. Most likely to be rendered in Consolas
@@ -89,70 +31,56 @@
     Menlo, Monaco, Consolas, // A few sensible system font choices
     monospace; // The final fallback for rendering in monospace.
 
-@ff-display: @ff-druk;
-
 html,
 body {
     --ff-sans: @ff-sans;
     --ff-serif: @ff-serif;
     --ff-mono: @ff-mono;
-    --ff-display: @ff-display;
-    --theme-body-font-family: var(--ff-serif);
+    --theme-body-font-family: var(--ff-sans);
 
     //  ============================================================================
-    //  $   FONT SIZES (fs-) - Field Museum
-    //      Base font-size is 18px.
+    //  $   FONT SIZES (fs-)
+    //      Base font-size is 16px.
     //  ----------------------------------------------------------------------------
     --fs-fine:           12px;
     --fs-caption:        14px;
     --fs-body1:          16px;
-    --fs-body2:          18px;
-    --fs-body3:          24px;
-    --fs-subheading:     28px;
-    --fs-title:          32px;
-    --fs-headline1:      40px;
-    --fs-headline2:      48px;
-    --fs-display1:       72px;
-    --fs-display2:       88px;
-    --fs-display3:       144px;
-    --fs-display4:       144px;
+
+    //  Relative to the root element
+    --fs-body2:               1.25rem;    // 20px
+    --fs-body3:               1.5rem;     // 24px
+    --fs-subheading:          1.75rem;    // 28px
+    --fs-title:               2rem;       // 32px
+    --fs-headline1:           2.5rem;     // 40px
+    --fs-headline2:           3rem;       // 48px
+    --fs-display1:            4.5rem;     // 72px
+    --fs-display2:            5.5rem;     // 88px
+    --fs-display3:            9rem;       // 144px
+    --fs-display4:            9rem;       // 144px
 
     //  Relative to the parent
-    //  These are calculated based on the new base font size of 18px
-    --fs-body2-relative:      1em;
-    --fs-body3-relative:      1.333em;
-    --fs-subheading-relative: 1.555em;
-    --fs-title-relative:      1.777em;
-    --fs-headline1-relative:  2.222em;
-    --fs-headline2-relative:  2.666em;
-    --fs-display1-relative:   4em;
-    --fs-display2-relative:   4.888em;
-    --fs-display3-relative:   8em;
-    --fs-display4-relative:   8em;
+    --fs-body2-relative:      1.25em;
+    --fs-body3-relative:      1.5em;
+    --fs-subheading-relative: 1.75em;
+    --fs-title-relative:      2em;
+    --fs-headline1-relative:  2.5em;
+    --fs-headline2-relative:  3em;
+    --fs-display1-relative:   4.5em;
+    --fs-display2-relative:   5.5em;
+    --fs-display3-relative:   9em;
+    --fs-display4-relative:   9em;
 
-    // this value is not using spacing units because the calc involved results
-    // in unexpected sizing. I'm not sure why, honestly.
-    --fs-base: 18px;
+    --fs-base: 16px;
 
     //  ============================================================================
     //  $   LINE HEIGHT (lh-)
     //  ----------------------------------------------------------------------------
-    // Need to remove the unit off the font-size to make line-height unitless
-    // FIXME this shouldn't be public. Find a way to use unitless `--fs-base`.
-    --stacks-internals-lh-unit: 13;
+    --lh-xs:    1.2;
+    --lh-sm:    1.3;
+    --lh-md:    1.4;
+    --lh-lg:    1.5;
+    --lh-xl:    1.6;
+    --lh-xxl:   1.7;
 
-    // Now the various line-height variables
-    --lh-xs:    1;
-    --lh-sm:    calc((var(--stacks-internals-lh-unit) + 2) / var(--stacks-internals-lh-unit));
-    --lh-md:    calc((var(--stacks-internals-lh-unit) + 4) / var(--stacks-internals-lh-unit));
-    --lh-lg:    calc((var(--stacks-internals-lh-unit) + 8) / var(--stacks-internals-lh-unit));
-    --lh-xl:    calc((var(--stacks-internals-lh-unit) + 12) / var(--stacks-internals-lh-unit));
-    --lh-xxl:   2;
-
-    --lh-base: var(--lh-md);
-
-    //      Holdover line-heights from production. These are NOT to be used and
-    //      need to be deprecated.
-    //  ----------------------------------------------------------------------------
-    --lh-6:      ((var(--stacks-internals-lh-unit) + 6) / var(--stacks-internals-lh-unit));
+    --lh-base: var(--lh-lg);
 }

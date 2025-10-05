@@ -1,15 +1,15 @@
 .s-input,
 .s-textarea {
-    --_in-bc: var(--black-250); // Field Gray Light
-    --_in-bg: transparent;
-    --_in-br: 0;
+    --_in-bc: var(--bc-darker);
+    --_in-bg: var(--white);
+    --_in-br: var(--br-md);
     --_in-c: unset;
     --_in-fc: var(--fc-dark);
     --_in-fs: var(--fs-body1);
     --_in-o: unset;
-    --_in-px: 0;
+    --_in-px: 0.7em;
     --_in-py: 0.6em;
-    --_in-placeholder-fc: var(--black-400); // Field Gray
+    --_in-placeholder-fc: var(--black-300);
 
     // CONTEXTUAL STYLES
     @supports (-webkit-overflow-scrolling: touch) {
@@ -100,14 +100,12 @@
     // Note: We're applying the focus styles both on `:focus` and `:focus-within` since this component can sometimes be used on the parent of an input such as in our tag selector in Core.
     &:focus,
     &:focus-within {
-        --_in-bc: var(--blue-400); // Field Blue
-        outline: none;
+        .focus-styles();
     }
 
     @scrollbar-styles();
     background-color: var(--_in-bg);
-    border: none;
-    border-bottom: var(--su-static1) solid var(--_in-bc);
+    border: var(--su-static1) solid var(--_in-bc);
     border-radius: var(--_in-br);
     color: var(--_in-fc);
     cursor: var(--_in-c);
@@ -116,7 +114,7 @@
     padding: var(--_in-py) var(--_in-px) var(--_in-py) var(--_in-pl, var(--_in-px));
 
     -webkit-appearance: none; // Removes shadows we don't want in mobile Safari
-    font-family: var(--ff-sans);
+    font-family: inherit;
     margin: 0; // A guard against Core's default margins
     width: 100%;
 }
