@@ -22,7 +22,10 @@ Menu-text and sidebar-navigation text is overlapping body text.
 The page footer (pale gray banner) is also floating in the midding of the page, overlapping text content
 
 ## 2. Basic styling is missing
-- Font, colors, and other page-styling did not appear to be respecting css styling. 
+Font, colors, and other page-styling did not appear to be respecting css styling. 
 
 ## 3. Home page is displaying a github login screen
-- See screenshot_Home_Stacks.png
+See screenshot_Home_Stacks.png
+
+## 4. Missing pages
+Trying to access some pages returns an error -- e.g. localhost:8080/product/components should render, but instead returns a blank page with the error: "Cannot GET /product/components" 
