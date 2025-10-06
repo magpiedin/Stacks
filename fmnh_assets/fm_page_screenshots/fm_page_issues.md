@@ -1,13 +1,13 @@
 # Screenshots of site issues when testing locally
 
-See these screenshots and html-files for examples
+See these screenshots and html-files for examples of issues that occur when testing the feat/field-museum-theme branch locally
 
-page slug | html | screenshot
+local link | html | screenshot
 -|-|-
-  `/` | example_Home_Stacks.html | screenshot_Home_Stacks.png
-  `brand/colors` | example_Colors_Stacks.html | screenshot_Colors_Stacks.png
-  `brand/logo` | example_Logo_Stacks.html | screenshot_Logo_Stacks.png
-  `brand/typography` | example_Typography_Stacks.html | screenshot_Typography_Stacks.png
+  `localhost:8080/` | example_Home_Stacks.html | screenshot_Home_Stacks.png
+  `localhost:8080/brand/colors` | example_Colors_Stacks.html | screenshot_Colors_Stacks.png
+  `localhost:8080/brand/logo` | example_Logo_Stacks.html | screenshot_Logo_Stacks.png
+  `localhost:8080/brand/typography` | example_Typography_Stacks.html | screenshot_Typography_Stacks.png
 
 
 # Issues:
