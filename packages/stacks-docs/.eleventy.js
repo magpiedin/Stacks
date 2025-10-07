@@ -40,6 +40,7 @@ module.exports = function(eleventyConfig) {
   // Copy these files over to _site
   eleventyConfig.addPassthroughCopy('assets/dist');
   eleventyConfig.addPassthroughCopy('assets/img');
+  eleventyConfig.addPassthroughCopy('assets/fonts');
   eleventyConfig.addPassthroughCopy('email/templates/code');
   eleventyConfig.addPassthroughCopy('email/templates/examples');
 

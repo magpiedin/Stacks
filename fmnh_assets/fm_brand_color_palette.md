@@ -17,7 +17,7 @@ color/brand/white: \#FFFFFF
 color/ neutral/white: \#FFFFFF  
 color/ neutral/50: \#F8FAFD  
 color/ neutral/100: \#F3F5FA  
-color/ neutral/200: \#E7EAFO  
+color/ neutral/200: #E7EAF0
 color/ neutral/300: \#D6DAE1  
 color/ neutral/400: \#C0C4CC  
 color/ neutral/500: \#9DA2AA  
@@ -35,7 +35,7 @@ color/primary/100: \#D9E6FF
 color/primary/200: \#BCD4FF   
 color/primary/300: \#90B3FF   
 color/primary/400: \#5D91FB   
-color/primary/500: \#296DFO   
+color/primary/500: #296DF0
 color/primary/600 – Hyperlinks, actions: \#0A46E6   
 color/primary/700: \#093BD0  
 color/primary/800: \#0A31AA  
@@ -75,7 +75,7 @@ color/amber/950 \#451C00
 color/green/50 – Background (low emphasis): \#EDFCF4  
 color/green/100: \#D7F7E9  
 color/green/200: \#B8F2D8  
-color/green/300 – Background (medium emphasis): \#9BEOC1  
+color/green/300 – Background (medium emphasis): #9BE0C1
 color/green/400: \#76C4A1  
 color/green/500: \#39A273  
 color/green/600 –  Success text, background (high emphasis): \#248056  
@@ -129,7 +129,7 @@ color/orange/950: \#3D1A00
 **Lime**
 
 color/lime/50 – Background (low emphasis): \#F9FFE8  
-color/lime/100: \#FOFAC8  
+color/lime/100: #F0FAC8
 color/lime/200: \#E4F792  
 color/lime/300 – Background (medium emphasis): \#CFE37A  
 color/lime/400: \#B7C965  
