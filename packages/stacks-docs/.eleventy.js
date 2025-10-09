@@ -38,9 +38,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginTOC, {tags: ['h2', 'h3'], wrapper: 'nav aria-label="Table of contents"', wrapperClass: 'toc s-anchors s-anchors__muted'});
 
   // Copy these files over to _site
+  eleventyConfig.addPassthroughCopy({ "../../fmnh_assets/fonts/Switzer_Complete/Fonts/WEB/fonts": "assets/fonts" });
   eleventyConfig.addPassthroughCopy('assets/dist');
   eleventyConfig.addPassthroughCopy('assets/img');
-  eleventyConfig.addPassthroughCopy('assets/fonts');
   eleventyConfig.addPassthroughCopy('email/templates/code');
   eleventyConfig.addPassthroughCopy('email/templates/examples');
 
