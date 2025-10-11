@@ -314,6 +314,18 @@ body .themed {
     --green-400: #248056;
     --green-500: #1E6645;
     --green-600: #0F4D2F;
+    --lime-100: #F0FAC8;
+    --lime-200: #E4F792;
+    --lime-300: #CFE37A;
+    --lime-400: #B7C965;
+    --lime-500: #9DB149;
+    --lime-600: #85963C;
+    --secondary-blue-100: #D5F0FD;
+    --secondary-blue-200: #B8E1F6;
+    --secondary-blue-300: #9ACDE5;
+    --secondary-blue-400: #7FB8D4;
+    --secondary-blue-500: #4796BD;
+    --secondary-blue-600: #1E7BA8;
     --red-100: #FFE2E0;
     --red-200: #FFCFCB;
     --red-300: #FFA199;
