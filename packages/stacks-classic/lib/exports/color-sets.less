@@ -161,26 +161,6 @@
     500: #1E6645;
     600: #0F4D2F;
 }
-
-// Lime
-.set-lime() {
-    100: #F0FAC8;
-    200: #E4F792;
-    300: #CFE37A;
-    400: #B7C965;
-    500: #9DB149;
-    600: #85963C;
-}
-
-// Secondary Blue
-.set-secondary-blue() {
-    100: #D5F0FD;
-    200: #B8E1F6;
-    300: #9ACDE5;
-    400: #7FB8D4;
-    500: #4796BD;
-    600: #1E7BA8;
-}
 .set-green-dark() {
     100: hsl(149, 51%, 15%);
     200: hsl(149, 51%, 25%);
@@ -606,8 +586,6 @@
     orange: .set-orange();
     blue: .set-blue();
     green: .set-green();
-    lime: .set-lime();
-    secondary-blue: .set-secondary-blue();
     red: .set-red();
     yellow: .set-yellow();
     purple: .set-purple();
@@ -622,8 +600,6 @@
     orange: .set-orange-dark();
     blue: .set-blue-dark();
     green: .set-green-dark();
-    lime: .set-lime-dark();
-    secondary-blue: .set-secondary-blue-dark();
     red: .set-red-dark();
     yellow: .set-yellow-dark();
     purple: .set-purple-dark();
@@ -718,13 +694,13 @@
 // Theme values
 // TODO update to use custom theme colors with orange/blue as fallbacks
 .set-theme-primary-default() {
-    default: var(--secondary-blue-600);
-    100: var(--secondary-blue-100);
-    200: var(--secondary-blue-200);
-    300: var(--secondary-blue-300);
-    400: var(--secondary-blue-400);
-    500: var(--secondary-blue-500);
-    600: var(--secondary-blue-600);
+    default: var(--orange-400);
+    100: var(--orange-100);
+    200: var(--orange-200);
+    300: var(--orange-300);
+    400: var(--orange-400);
+    500: var(--orange-500);
+    600: var(--orange-600);
 }
 
 .set-theme-secondary-default() {
@@ -743,11 +719,11 @@
 }
 
 .theme-light-default() {
-    primary: .set-secondary-blue()[600];
-    secondary: .set-purple()[600];
+    primary: .set-orange()[400];
+    secondary: .set-blue()[400];
 }
 
 .theme-dark-default() {
-    primary: .set-secondary-blue-dark()[200];
-    secondary: .set-purple-dark()[200];
+    primary: .set-orange-dark()[400];
+    secondary: .set-blue-dark()[400];
 }
